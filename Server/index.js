@@ -3,10 +3,10 @@ const dotenv = require("dotenv");
 const express = require("express");
 const router = require("./router/user-router");
 const ConnectDB = require("./config/db");
-const { InsertCourseDB } = require("./controllers/course-controller");
+
 dotenv.config();
 ConnectDB();
-InsertCourseDB();
+
 const app = express();
 // middleware
 app.use(cors());
