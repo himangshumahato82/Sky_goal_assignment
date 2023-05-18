@@ -4,7 +4,7 @@ import Register from "./pages/Register-User";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login-User";
-import Course from "./pages/Course";
+
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/course" element={<Course />} />
+        
       </Routes>
     </div>
   );
