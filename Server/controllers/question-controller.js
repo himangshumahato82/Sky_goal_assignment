@@ -1,7 +1,7 @@
 
 const UserModel = require("../models/user-schema");
 
-const Course_Controller = async (req, res) => {
+const Question_Controller = async (req, res) => {
   const id = req.UserId;
   try {
     const getUser = await UserModel.findOne({ _id: id });
@@ -22,9 +22,13 @@ const Course_Controller = async (req, res) => {
 };
 
 // insert Course in DB
+// const InsertCourseDB = async () => {
+//   CourseModel.insertMany(CourseArray)
+//     .then((res) => console.log(res))
+//     .catch((error) => console.log(error));
+// };
 
-
-// find all courses
+// // find all courses
 // const FIND_ALL_COURSES = async (req, res) => {
 //   try {
 //     const all_course = await CourseModel.find({});
@@ -45,4 +49,4 @@ const Course_Controller = async (req, res) => {
 //     });
 //   }
 // };
-module.exports = { Course_Controller };
+module.exports = { Question_Controller };
