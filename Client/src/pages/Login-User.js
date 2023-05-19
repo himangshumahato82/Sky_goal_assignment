@@ -33,9 +33,10 @@ const Login = () => {
     }
     const result = await LOGIN_USER(loginInput);
     if (result.status === 200) {
+            console.log(result.data.Token)
       localStorage.setItem("TALENT_BOX_TOKEN", result.data.Token);
       alert("Log in successfull....");
-      redirect("/");
+      redirect("/course");
     } else {
       alert(result.response.data.message);
     }

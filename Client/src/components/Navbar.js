@@ -6,7 +6,7 @@ import { profileContext } from "../context/myContext";
 import { FaSearch, FaSistrix } from "react-icons/fa";
 const Navbar = () => {
   const { profile, setProfile } = useContext(profileContext);
-   console.log(profile.name)
+  console.log(profile)
   const URL = "http://localhost:8080";
   const redirect = useNavigate();
   const logoutUser = () => {

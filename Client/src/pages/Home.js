@@ -7,13 +7,14 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const { profile, setProfile } = useContext(profileContext);
   const token = localStorage.getItem("TALENT_BOX_TOKEN");
-  console.log(token);
+  
 
   const getUser = async () => {
     const result = await USER_AUTH(token);
     console.log(result);
     if (result.status === 200) {
       setProfile(result.data.user);
+      console.log(result.data.user);
     }
   };
   useEffect(() => {
