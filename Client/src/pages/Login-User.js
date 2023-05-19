@@ -36,7 +36,7 @@ const Login = () => {
             console.log(result.data.Token)
       localStorage.setItem("TALENT_BOX_TOKEN", result.data.Token);
       alert("Log in successfull....");
-      redirect("/course");
+      redirect("/question");
     } else {
       alert(result.response.data.message);
     }
@@ -63,7 +63,7 @@ const Login = () => {
 
         <Input type="submit" value="Register" />
       </form>
-      <Button className="google-btn" buttonText="Login with Google" />
+      
     </div>
   );
 };

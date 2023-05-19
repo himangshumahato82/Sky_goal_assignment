@@ -25,7 +25,7 @@ const Home = () => {
   const redirect = useNavigate();
   const handleClick = () => {
     if (Object.keys(profile).length > 0) {
-      redirect("/course");
+      redirect("/question");
     } else {
       redirect("/register");
     }
@@ -33,38 +33,12 @@ const Home = () => {
   return (
     <div id="home-div">
       <div className="home-top-div">
-        <h3>Learn to Code - for free.</h3>
-        <h3>Build Projecst.</h3>
-        <h3>Earn Certifications.</h3>
+        <h3>Skygoaltech Assignment</h3>
+        <p>Given By Bhavana Mam</p>
+        <h3>Thank You </h3>
       </div>
-      <div className="home-bottom-div">
-        <p>
-          Since 2014, more than 40,000 freeCodeCamp.org graduates have gotten
-          jobs at tech companies including:
-        </p>
-        <div>
-          <p>
-            <FaApple />
-          </p>
-          <p>Google</p>
-          <p>
-            <span>
-              <FaMicrosoft />
-            </span>
-            <span>Microsoft</span>
-          </p>
-          <p>
-            <span>
-              <FaSpotify />
-            </span>{" "}
-            <span>Spotify</span>
-          </p>
-          <p>
-            <FaAmazon />
-          </p>
-        </div>
-      </div>
-      <Button buttonText="Get started (it's free) " onClick={handleClick} />
+    
+      <Button buttonText="Let's Login First" onClick={handleClick} />
     </div>
   );
 };

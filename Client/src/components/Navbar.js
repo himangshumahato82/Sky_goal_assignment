@@ -14,16 +14,23 @@ const Navbar = () => {
     setProfile({});
     redirect("/");
   };
+  const Question=()=>{
+    alert("Without Login you can't view question")
+    if(Object.keys(profile).length > 0){
+     
+      redirect("/question")
+      
+    }else{
+      redirect("/register")
+      
+    }
+  }
+  
   return (
     <div id="nav-bar">
-      <div className="input-div">
-        <span>
-          <FaSistrix className="serIcon" />
-        </span>
-        <Input placeholder="Search 8000+ Tutorial.." className="nav-input" />
-      </div>
-      <h4 className="freeCode-camp" onClick={() => redirect("/course")}>
-        FreeCodeCamp(A)
+      
+      <h4 className="freeCode-camp" onClick={Question}>
+       View Assignment Question
       </h4>
       {Object.keys(profile).length > 0 ? (
         <div className="profile">

@@ -8,7 +8,7 @@ const USER_AUTH = async (token) => {
     },
   };
   return axios
-    .get(`${URL}/course`, config)
+    .get(`${URL}/question`, config)
     .then((res) => res)
     .catch((error) => error);
 };
