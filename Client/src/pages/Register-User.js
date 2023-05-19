@@ -55,7 +55,7 @@ const Register = () => {
   return (
     <div id="form">
       <form onSubmit={onFormSubmit}>
-        <p>Registration Form</p>
+        <h1>Registration Form</h1>
         <Input
           type="text"
           name="name"
@@ -96,6 +96,7 @@ const Register = () => {
           Here
         </span>{" "}
       </p>
+      <Button className="google-btn" buttonText="Login with Google" />
     </div>
   );
 };
