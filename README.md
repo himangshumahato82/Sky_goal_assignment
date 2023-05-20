@@ -1,6 +1,6 @@
 # Sky_goal_assignment
 FrontEnd Deployed Link-https://skygoal-assignment-cf2085.netlify.app/
-
+BackEnd Deployed link-https://skygoal-backed-data.up.railway.app/
 
 * The application is built using React JS, React-Router-Dom, and Normal Css,Node JS,Express JS,MongoDB.
 
